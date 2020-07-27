@@ -6,6 +6,7 @@ This project can be used to do MQTT actions via GPRS with the SIM800L V2 module 
 ### Preparation:
 
 - Install [Arduino IDE](https://www.arduino.cc/en/main/software), or any IDE that can compile with the Arduino Framework
+- Add required libraries
 
 ### Wiring/Cabling SIM800L V2 (Follow the schematic):
 - Connect SIM800 GND PIN with power source 
