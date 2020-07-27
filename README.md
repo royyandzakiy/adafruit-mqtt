@@ -6,7 +6,21 @@ This project can be used to do MQTT actions via GPRS with the SIM800L V2 module 
 ### Preparation:
 
 - Install [Arduino IDE](https://www.arduino.cc/en/main/software), or any IDE that can compile with the Arduino Framework
-- Add required libraries
+- Install required libraries
+- Do correct wiring (detailed description below)
+
+### Program it!:
+
+1. Create **credentials.h**, save within the same folder. **credentials.h** copy this inside, and change the `AIO_USERNAME` and `AIO_KEY` as how your io.adafruit.com account is. Leave the others as is:
+```cpp
+#define AIO_SERVER      "io.adafruit.com"
+#define AIO_SERVERPORT  1883
+#define AIO_USERNAME    "yourUsernameHere"
+#define AIO_KEY         "YourAIOkeyHere"
+```
+2. Open file **adafruit-mqtt.ino**
+4. Choose proper Serial COM
+4. Build, Upload
 
 ### Wiring/Cabling SIM800L V2 (Follow the schematic):
 - Connect SIM800 GND PIN with power source 
@@ -26,19 +40,6 @@ This project can be used to do MQTT actions via GPRS with the SIM800L V2 module 
 Below is Full Schematic
 ![](docs/schematics.jpeg)
 ![](docs/schematics_notes_indo.jpeg)
-
-### Program it!:
-
-1. Create **credentials.h**, save within the same folder. **credentials.h** copy this inside, and change the `AIO_USERNAME` and `AIO_KEY` as how your io.adafruit.com account is. Leave the others as is:
-```cpp
-#define AIO_SERVER      "io.adafruit.com"
-#define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "yourUsernameHere"
-#define AIO_KEY         "YourAIOkeyHere"
-```
-2. Open file "adafruit-mqtt.ino"
-4. Choose proper Serial COM
-4. Build, Upload
 
 ---
 
