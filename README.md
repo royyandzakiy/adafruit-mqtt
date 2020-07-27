@@ -22,6 +22,8 @@ This project can be used to do MQTT actions via GPRS with the SIM800L V2 module 
 4. Choose proper Serial COM
 4. Build, Upload
 
+---
+
 ### Wiring/Cabling SIM800L V2 (Follow the schematic):
 - Connect SIM800 GND PIN with power source 
 > if possible, differ power source with microcontroller. If use microcontroller as power source, e.g: arduino; sometimes cause failure, or voltage drop. Causing SIM800 module to restart endlessly.
