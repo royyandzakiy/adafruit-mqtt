@@ -43,6 +43,20 @@ Below is Full Schematic
 ![](docs/schematics.jpeg)
 ![](docs/schematics_notes_indo.jpeg)
 
+### (Optional) Test SIM800 Through Serial Monitor:
+
+You can test the SIM800L to check whether or not it is successfully working
+
+1. Open PuTTY (or any kind of serial monitor)
+2. Choose Category Session
+3. Change option to Serial (default is SSH)
+4. Fill in proper Serial COM
+5. Fill in proper Speed (Serial Monitor Baud Rate)
+6. Click Open
+7. Once opened, try these test codes one-by-one
+- `AT` --> Will respond `OK`
+- `AT+CSQ` --> Will respond `+CSQ: 19,0`, whereas 19 is the network signal strengh in dBm (may differ)
+
 ---
 
 ### a note from Royyan
