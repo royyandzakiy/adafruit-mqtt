@@ -1,4 +1,4 @@
-# Adafruit MQTT Pub-Sub :cloud:
+# Adafruit Pub-Sub MQTT Messages :cloud:
 
 This project can be used to do MQTT actions via GPRS with the SIM800L V2 module (not the SIM800L V1, nor any other type of module guaranteed to succeed).
 
